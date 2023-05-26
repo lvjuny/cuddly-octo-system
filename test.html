@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   
+  </style>
+</head>
+<body>
+  <img src="../images/9.5/01.jpg" alt="">
+  <script>
+   let myImage = document.querySelector('img');
+
+    myImage.onclick = function () {
+      let mySrc = myImage.getAttribute('src');
+      if (mySrc === '../images/9.5/01.jpg') {
+        myImage.setAttribute('src', '../images/9.5/03.jpg');
+      } else {
+        myImage.setAttribute('src', '../images/9.5/02.jpg');
+      }
+    }
+    /* 点击图片更改图片 */
+    
+
+  </script>
+</body>
+</html>
